@@ -1,0 +1,16 @@
+{
+  "name": "ant",
+  "version": "1.0.0",
+  "description": "ant",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^2.5.0",
+    "fastify-mysql": "^0.3.0",
+    "glob": "^7.1.4"
+  }
+}
