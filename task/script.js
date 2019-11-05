@@ -1,7 +1,7 @@
 const exec = require('child_process').exec;
-module.exports = function (pid, script_src) {
+module.exports = function (task_content) {
     return new Promise((resolve, reject) => {
-        exec(`cd ${script_src} && npm run build`,  (error, stdout, stderr) => {
+        exec(task_content,  (error, stdout, stderr) => {
             if (error) {
                 reject(error);
                 return 
