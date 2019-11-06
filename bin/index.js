@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const script = require('./task/script');
 const db = require('./lib/db');
 

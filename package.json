@@ -1,8 +1,11 @@
 {
-  "name": "ant",
-  "version": "1.0.0",
-  "description": "ant",
-  "main": "index.js",
+  "name": "ergate-cli",
+  "version": "1.0.1",
+  "description": "像蚂蚁一样勤奋的搬运，并保持自身的短小精湛。",
+  "main": "bin/index.js",
+  "bin": {
+    "ergate-cli": "bin/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
