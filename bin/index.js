@@ -40,10 +40,9 @@ console.log('任务开始:', PROJECT_ID);
             console.log('即将进入调用环节，请注意执行情况。pid:%s | 当前pid:%s | index:%s', PROJECT_ID, bs_id, index);
             try{
                 console.log('开始调用脚本: row:%j | pid:%s | index:%s', row, PROJECT_ID, index)
-                a();
-                // await script(task_content);
-                // await db('update task set task_status = 2 WHERE tid = ?', [tid])
-                // console.log('任务执行成功:', JSON.stringify(row), PROJECT_ID)
+                await script(task_content);
+                await db('update task set task_status = 2 WHERE tid = ?', [tid])
+                console.log('任务执行成功:', JSON.stringify(row), PROJECT_ID)
             } catch(err){
                 console.log('任务执行失败: msg:%s | row:%j | pid:%s | index:%s', err.message, row, PROJECT_ID, index)
                 await db(
