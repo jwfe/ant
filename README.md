@@ -24,7 +24,7 @@ export ANT_MYSQL_PASSWORD=123456
 ### 定时任务启动
 ```
 # crontab增加定时脚本
-3 * * * * /home/zhouminghui/project/node_modules/ergate-cli/bin/index.js
+*/3 * * * * /home/zhouminghui/project/node_modules/ergate-cli/bin/index.js
 ```
 
 ### 数据库中配置
